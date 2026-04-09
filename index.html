@@ -5,48 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reporte KW Pilar</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 10px; }
-        .card { max-width: 400px; margin: auto; background: white; border-radius: 15px; overflow: hidden; box-shadow: 0 4px 15px rgba(0,0,0,0.2); }
-        .header { background: #b9212d; color: white; padding: 30px 20px; text-align: center; }
-        .header h1 { margin: 0; font-size: 28px; letter-spacing: 2px; }
-        .header p { margin: 5px 0 0; font-size: 14px; opacity: 0.9; }
-        .content { padding: 25px; text-align: center; color: #333; }
-        h2 { color: #b9212d; font-size: 18px; margin-bottom: 10px; }
-        .info-box { background: #f9f9f9; border-left: 5px solid #b9212d; padding: 10px; margin: 15px 0; text-align: left; }
-        .btn { display: block; background: #333; color: white; padding: 15px; text-decoration: none; border-radius: 8px; font-weight: bold; margin-bottom: 10px; }
-        .btn-red { background: #b9212d; }
+        body { font-family: 'Helvetica Neue', Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 10px; }
+        .card { max-width: 450px; margin: auto; background: white; border-radius: 20px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.15); }
+        
+        .header { background: #b9212d; color: white; padding: 25px; text-align: center; }
+        .header h1 { margin: 0; font-size: 26px; letter-spacing: 3px; font-weight: bold; }
+        .header p { margin: 5px 0 0; font-size: 13px; letter-spacing: 1px; }
+
+        .content { padding: 20px; text-align: center; color: #333; }
+        h2 { color: #b9212d; font-size: 18px; margin: 15px 0; text-transform: uppercase; }
+        p.intro { font-size: 15px; margin-bottom: 20px; color: #555; }
+        
+        /* Contenedores de fotos de tendencias */
+        .img-container { background: #f9f9f9; border-left: 5px solid #b9212d; padding: 5px; margin-bottom: 15px; border-radius: 4px; }
+        .img-container img { width: 100%; height: auto; display: block; border-radius: 4px; }
+
+        /* Botones */
+        .btn { display: block; padding: 16px; text-decoration: none; border-radius: 10px; font-weight: bold; font-size: 15px; margin-bottom: 12px; transition: 0.2s; }
+        .btn-red { background: #b9212d; color: white; }
+        .btn-dark { background: #333; color: white; }
+        .btn:active { transform: scale(0.98); }
+
         .footer { background: #333; color: white; padding: 20px; text-align: center; }
-        img { max-width: 100%; height: auto; display: block; margin: auto; border-radius: 5px; }
+        .firma-img { width: 100%; max-width: 350px; height: auto; margin-bottom: 10px; border-radius: 0; }
+        .footer p { margin: 0; font-size: 13px; opacity: 0.8; }
     </style>
 </head>
 <body>
 
 <div class="card">
     <div class="header">
-        <h1>KW<span>PILAR</span></h1>
+        <h1>KWPILAR</h1>
         <p>KELLER WILLIAMS</p>
     </div>
 
     <div class="content">
         <h2>TENDENCIAS DE MERCADO</h2>
-        <p>Hola! Te comparto las novedades de Febrero 2026.</p>
+        <p class="intro">Hola! Te comparto las novedades de Febrero 2026.</p>
 
-        <div class="info-box">
-            <img src="tendencia-gba.jpeg" alt="Tendencias GBA Norte">
+        <div class="img-container">
+            <img src="gba.jpeg" alt="Tendencias GBA Norte">
         </div>
 
-        <div class="info-box">
-            <img src="tendencia-caba.jpeg" alt="Tendencias CABA">
+        <div class="img-container">
+            <img src="caba.jpeg" alt="Tendencias CABA">
         </div>
 
-        <a href="https://www.zonaprop.com.ar/propiedades/clasificado/veclcain-casa-en-venta-10-ambientes-en-ayres-de-pilar-58804714.html?utm_source=share&utm_medium=copyLink&utm_campaign=property_share" class="btn btn-red" target="_blank" rel="noopener noreferrer">VER OPORTUNIDADES</a>
+        <a href="https://www.zonaprop.com.ar/propiedades/clasificado/veclcain-casa-en-venta-10-ambientes-en-ayres-de-pilar-58804714.html" class="btn btn-red" target="_blank" rel="noopener noreferrer">VER OPORTUNIDADES</a>
         
-        <a href="https://wa.me/5491165863900" class="btn" target="_blank" rel="noopener noreferrer">CONSULTAR POR WHATSAPP</a>
+        <a href="https://wa.me/5491165863900" class="btn btn-dark" target="_blank" rel="noopener noreferrer">CONSULTAR POR WHATSAPP</a>
     </div>
 
     <div class="footer">
-        <img src="firma.png" alt="Firma Carolina Salimei" style="max-width: 250px; margin-bottom: 10px;">
-        <p style="margin: 0; font-size: 14px;">Carolina Salimei - Profesional Inmobiliaria</p>
+        <img src="firma.png" alt="Carolina Salimei" class="firma-img">
+        <p>Carolina Salimei - Profesional Inmobiliaria</p>
     </div>
 </div>
 
